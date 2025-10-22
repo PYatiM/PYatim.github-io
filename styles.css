@@ -188,7 +188,7 @@ header p {
 }
 
 .register h2 {
-  color: #ffb868;
+  color: #000000;
   font-family: 'Lora', serif;
   margin-bottom: 20px;
 }
@@ -206,6 +206,28 @@ button {
 }
 
 button:hover {
-  background-color: #ff7c1a;
+  background-color: #fa8023;
   transform: scale(1.05);
 }
+
+.register-btn {
+  background-color: #fc6d00;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-btn:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+}
+
+.register-btn:active {
+  transform: scale(0.95);
+}
+
