@@ -1,0 +1,211 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0236;
+  color: #f1f5f9;
+  margin: 0;
+  cursor: none;
+  overflow-x: hidden;
+  transition: background-color 2s ease-in-out;
+}
+
+#interactive-hero {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+#interactive-hero.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+.heading {
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+  color: #fbbf77;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: #ffd8a8;
+  margin-bottom: 2rem;
+}
+
+#diya-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+#wick {
+  position: absolute;
+  width: 12px;
+  height: 30px;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('images/till.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+#diya {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  width: 100%;
+  height: 60%;
+}
+
+#flame {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.instruction {
+  color: #fbbf77;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+#strike-strip {
+  width: 160px;
+  height: 40px;
+  background-color: rgba(55, 55, 55, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#strike-strip p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+#custom-cursor {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  z-index: 50;
+  transform: translate(-10px, -60px);
+  transition: transform 0.1s ease-out;
+}
+
+/* Main Content */
+#main-content {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none;
+}
+
+#main-content.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+  color: #000000;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.card {
+  background-color: rgb(237, 207, 167);
+  border: 1px solid rgb(237, 207, 167);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.card h2 {
+  color: #000000;
+  font-family: 'Lora', serif;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #000000;
+  line-height: 1.6;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #000000;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+.prizes {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.prizes h3 {
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.register {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.register h2 {
+  color: #ffb868;
+  font-family: 'Lora', serif;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #e47113;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7c1a;
+  transform: scale(1.05);
+}
