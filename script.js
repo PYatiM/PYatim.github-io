@@ -36,3 +36,8 @@ wick.addEventListener("mouseenter", () => {
     }, 1500);
   }
 });
+
+document.getElementById("register-btn").addEventListener("click", () => {
+  window.location.href = "https://forms.gle/ESdB6SzwBbecuZZ9A";
+});
+
